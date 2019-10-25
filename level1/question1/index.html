@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript - MA03 - Question 1</title>
 </head>
+
 <body>
 
-<!--Contact Form-->
+    <!--Contact Form-->
+    <form name="submition">
+        <label>First Name:
+            <input type="text" id="firstName" required>
+        </label><br>
+        <label>Last Name:
+        <input type="text" id="lastName" required>
+        </label><br>
+        <label>Phone (8-digits):
+        <input type="number" id="phoneNumber">
+        </label><br>
+        <label>Email:
+        <input type="email" id="eMail">
+        </label><br>
+        <button onclick="checkNumber(document.getElementById('phoneNumber'));checkMail(document.getElementById('eMail'));">Submit</button>
+    </form>
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

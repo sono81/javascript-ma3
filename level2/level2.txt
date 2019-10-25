@@ -4,18 +4,82 @@ Level 2
 
 1. In your own words, describe what JavaScript Code Style is.
 
+- Code style is how different people write code. 
+  One person can use ", another '. 
+  Some like to use 2 or 4 spaces to indent while other uses tab. 
+  Some companies have strict "Style Guides" the employees has to follow.
+
 2. What is a Regular Expression?
+
+- A regular expression is a JavaScript Object that is a pattern from
+  which we use to match combinations of charaters.
+  Like we did in Level 1 question 1.
 
 3. What does the .random() method do?
 
+- The .random() method generates a random number between 0 and 1.
+
 4. What does the .sort() method do?
+
+- The .sort() method can take items in an Array and sort them.
 
 5. What does the .reverse() method do?
 
+- The .reverse() method turns an Array "on the head".
+  So the first element becomes the last, the second becomes
+  second to last. And so on...
+
 6. List two examples of bad JavaScript code.
+
+- First example, my own delivery on js1 ma1, task 4 :
+
+  for (hobbies in people) {
+    console.log(people["0"].firstName + "'s hobbies are: " + people["0"].hobbies);
+}
+for (hobbies in people) {
+    console.log(people["1"].firstName + "'s hobbies are: " + people["1"].hobbies);
+}
+for (hobbies in people) {
+    console.log(people["2"].firstName + "'s hobbies are: " + people["2"].hobbies);
+}
+
+Why did I not loop it!
+
+- Second example:
+
+var a = 5;
+var b = '5';
+a == b;
+
+so a string is the same as a number? Use the === instead.
 
 7. What data types can a JSON object contain?
 
+- A JavaScript object can contain the following data types:
+    - Numbers
+    - Strings
+    - Booleans
+    - Arrays
+    - Null
+    - Objects
+
+
 8. What is minifying JavaScript Code?
 
+- Minifying JavaScript code is when you compress your javascript code to a shorter code.
+  Example:
+  
+  function hi(yourName){
+    console.log('well hi there, ' + yourName);
+  }
+  hi('Sondre Nordjore);
+  
+  can be compressed to:
+  
+  function hi(a){console.log('Well hi there, '+a)}hi("Sondre Nordjore");
+  
+  That makes the code co down from 86 to 70 signs.
+
 9. What is a global variable?
+
+- A global variable is a variable which is declared outside a function. Usually in the beginning of the code. Be careful about using global variables since if the same variable is used in a function it can change value and affect your other code.
